@@ -6,7 +6,7 @@
 - I'm a software engineer.
 
 ## About
-I'm a software engineer based in Jacksonville, FL, with a career spanning eight years. Travis is driven by a passion for crafting top-quality code, solving intricate problems, and collaborating with teams to deliver innovative solutions.
+I'm a software engineer based in Jacksonville, FL, with a career spanning eight years. I'm driven by a passion for crafting top-quality code, solving intricate problems, and collaborating with teams to deliver innovative solutions.
 
 
 ## Contact
