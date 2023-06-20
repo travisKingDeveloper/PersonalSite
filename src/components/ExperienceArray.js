@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import getContentUrl from '../utils/getContentUrl'
 
 const parseExperience = (mdContent) => {
   const experience = [];
@@ -52,7 +53,7 @@ const ExperienceArray = () => {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
-    fetch("/content/Experience.md")
+    fetch(getContentUrl`Experience.md`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import getContentUrl from '../utils/getContentUrl'
 
 const parseProfile = (mdContent) => {
   const profile = {
@@ -69,7 +70,7 @@ const ProfileArray = () => {
   });
 
   useEffect(() => {
-    fetch("/content/Profile.md")
+    fetch(getContentUrl`Profile.md`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");
