@@ -16,4 +16,4 @@ If you wish to collaborate or want to discuss contract work you can reach out to
 - Email: travis.king.developer@gmail.com
 
 ## Logo
-- EB
+- TAK
