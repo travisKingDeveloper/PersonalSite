@@ -47,7 +47,7 @@ const OtherProjectsArray = () => {
   const [OtherProjects, setOtherProjects] = useState([]);
 
   useEffect(() => {
-    fetch(getContentUrl`OtherProjects.md`)
+    fetch(getContentUrl("OtherProjects.md"))
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");

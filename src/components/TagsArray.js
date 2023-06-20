@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import getContentUrl from "../utils/getContentUrl";
 
 const parseTags = (mdContent) => {
   const tags = [];
@@ -18,7 +19,7 @@ const TagsArray = (file) => {
   const [Tags, setTags] = useState([]);
 
   useEffect(() => {
-    fetch(`/content/${file}.md`)
+    fetch(getContentUrl(`${file}.md`))
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");

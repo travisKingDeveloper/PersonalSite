@@ -53,7 +53,7 @@ const ExperienceArray = () => {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
-    fetch(getContentUrl`Experience.md`)
+    fetch(getContentUrl("Experience.md"))
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");
