@@ -34,8 +34,7 @@ jobs:
       run: yarn
 
     - name: Run Build
-      run: |
-        REACT_APP_HOMEPAGE=/PersonalSite yarn run build
+      run: yarn run build
 
     - name: Deploy to GH Pages
       uses: JamesIves/github-pages-deploy-action@4.1.0
