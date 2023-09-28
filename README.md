@@ -84,9 +84,9 @@ To edit your work experience, update the `Experience.md` file with the following
   - Point 2
 ```
 
-### Projects.md
+### WorkHistory.md
 
-To edit your projects, update the `Projects.md` file with the following format:
+To edit your projects, update the `WorkHistory.md` file with the following format:
 
 ```
 ## Project Name

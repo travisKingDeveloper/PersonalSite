@@ -18,21 +18,21 @@ import {
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
 import { useState } from "react";
-import ProjectsArray from "./ProjectsArray";
+import WorkHistoryArray from "./WorkHistoryArray";
 import OtherProjectsArray from "./OtherProjectsArray";
 import TagsArray from "./TagsArray";
 
-export default function Projects({ color }) {
-    const projects = ProjectsArray();
+export default function WorkHistory({ color }) {
+    const projects = WorkHistoryArray();
     const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
-    
+    const options = TagsArray("WorkHistoryTags");
+
     const [selected, setSelected] = useState("All");
 
     const handleSelected = (value) => {
       setSelected(value);
     };
-    
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -45,9 +45,9 @@ export default function Projects({ color }) {
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
-                03
+                02
               </Text>
-              <Text fontWeight={800}>Projects</Text>
+              <Text fontWeight={800}>Work&nbsp;History</Text>
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
@@ -61,7 +61,7 @@ export default function Projects({ color }) {
                   }}
                   overflow="hidden"
                 >
-                  <Image objectFit="cover" src={project.image} />
+                  <Image objectFit="cover" src={project.image} background={project.name === "SS&C Advent" ? "black" : "white"} />
 
                   <Stack>
                     <CardBody align="left">

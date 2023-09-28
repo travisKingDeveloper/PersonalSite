@@ -46,11 +46,11 @@ const parseProjects = (mdContent) => {
   return projects;
 };
 
-const ProjectsArray = () => {
+const WorkHistoryArray = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(getContentUrl("Projects.md"))
+    fetch(getContentUrl("WorkHistory.md"))
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");
@@ -68,4 +68,4 @@ const ProjectsArray = () => {
   return projects;
 };
 
-export default ProjectsArray;
+export default WorkHistoryArray;
