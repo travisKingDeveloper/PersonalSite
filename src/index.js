@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 import theme from "./theme";
 import reportWebVitals from './reportWebVitals';
-// 1. Import the extendTheme function
 import { ChakraProvider } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
