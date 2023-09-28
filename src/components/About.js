@@ -4,7 +4,7 @@ import {
     Text,
     Container,
     Box,
-    HStack, Progress, Tag, Flex, ProgressLabel, Image,
+    HStack, Image,
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 export default function About({color}) {
